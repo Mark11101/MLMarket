@@ -1,0 +1,48 @@
+.b-sign-up.container {
+  max-width: 500px;
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-padding);
+}
+
+.b-sign-up__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--large-margin);
+}
+
+.b-sign-up__sign-in {
+  color: var(--black-color);
+}
+
+.b-sign-up__sign-in:hover {
+  color: var(--black-color);
+  opacity: 0.8;
+}
+
+.b-sign-up__form .b-sign-up__password,
+.b-sign-up__form .b-sign-up__email,
+.b-sign-up__form .b-sign-up__confirm-password {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-button.b-sign-up__submit {
+  width: 100%;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border-radius: var(--border-radius);
+}
+
+.b-sign-up__submit:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 550px) {
+  .b-sign-up.container {
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+  }
+}

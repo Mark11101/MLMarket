@@ -1,0 +1,47 @@
+.b-sign-in.container {
+  max-width: 500px;
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-padding);
+}
+
+.b-sign-in__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--large-margin);
+}
+
+.b-sign-in__sign-up {
+  color: var(--black-color);
+}
+
+.b-sign-in__sign-up:hover {
+  color: var(--black-color);
+  opacity: 0.8;
+}
+
+.b-sign-in__form .b-sign-in__password,
+.b-sign-in__form .b-sign-in__email {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-button.b-sign-in__submit {
+  width: 100%;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border-radius: var(--border-radius);
+}
+
+.b-sign-in__submit:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 550px) {
+  .b-sign-in.container {
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+  }
+}
