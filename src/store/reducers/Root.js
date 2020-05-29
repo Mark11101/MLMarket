@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux'
 
-import SignIn from './SignIn'
+import Auth from './Auth'
+import Ui from './Ui'
 
 const RootReducer = combineReducers({
-  signIn: SignIn,
+  auth: Auth,
+  ui: Ui,
 })
 
 export default RootReducer

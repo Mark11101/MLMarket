@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 
-import HomeScreen from './HomeScreen'
+import NavigationBar from './NavigationBar'
+import { logOut } from '../../store/actions/Auth'
 
 const mapStateToProps = (state) => {
   return {
@@ -8,12 +9,13 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
   return {
+    logOut: () => dispatch(logOut())
   }
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(HomeScreen)
+)(NavigationBar)

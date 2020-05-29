@@ -1,0 +1,47 @@
+.b-video-loading.container {
+  padding-top: var(--large-padding);
+  padding-bottom: var(--large-padding);
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  margin-top: 70px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+}
+
+.b-video-loading__header,
+.b-video-loading__info,
+.b-video-loading__input-form .b-video-loading__input,
+.b-video-loading__progress-bar,
+.b-video-loading__configuration {
+  margin-bottom: var(--average-margin);
+}
+
+.b-video-loading__configuration {
+  display: flex;
+}
+
+.b-video-loading__configuration .MuiFormControl-root {
+  width: 100%;
+  margin-right: var(--common-margin);
+}
+
+.b-video-loading__configuration .MuiFormControl-root:last-child {
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .b-video-loading__info {
+    padding-right: 120px;
+  }
+}
+
+@media(max-width: 768px) {
+  .b-video-loading__configuration {
+    display: block;
+  }
+
+  .b-video-loading__configuration .MuiFormControl-root {
+    margin-bottom: var(--common-margin);
+  }
+}

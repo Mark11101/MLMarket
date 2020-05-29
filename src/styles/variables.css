@@ -1,7 +1,11 @@
 :root {
     /* colors */
-    --black-color: #343a40;
-    --white-color: #ffffff;
+    --black-color:      #343a40;
+    --white-color:      #ffffff;
+    --blue-color:       #40618a;
+    --link-color:       #004499;
+    --grey-color:       #848383;
+    --light-blue-color: #e3ecf8;
 
     /* borders */
     --border-radius: 8px;

@@ -1,3 +1,22 @@
+h1, h2, h3, h4 {
+  font-weight: bold!important;
+}
+
+body.auth-page {
+  height: 100vh;
+  background-image: url(../images/Wallpaper.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #f2f2f2c2;
+}
+
+body.video-page {
+  height: 100vh;
+  background-color: var(--light-blue-color);
+}
+
 .b-button {
   display: inline-block;
   font-weight: 400;
@@ -10,5 +29,22 @@
   font-size: 1rem;
   border: none;
   border-radius: var(--border-radius);
+  color: var(--white-color);
   transition: color .15s ease-in-out,opacity .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.b-button:disabled {
+  background-color: var(--grey-color);
+}
+
+.b-button--primary {
+  background-color: var(--blue-color);
+}
+
+.b-button--primary:hover {
+  opacity: 0.9;
+}
+
+.MuiFormLabel-asterisk {
+  display: none;
 }

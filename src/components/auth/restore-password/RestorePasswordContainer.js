@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 
-import HomeScreen from './HomeScreen'
+import RestorePassword from './RestorePassword'
+import { requestRestorePassword } from '../../../store/actions/Auth'
 
 const mapStateToProps = (state) => {
   return {
@@ -10,10 +11,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
   return {
+    requestRestorePassword: (email) => dispatchEvent(requestRestorePassword(email))
   }
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(HomeScreen)
+)(RestorePassword)

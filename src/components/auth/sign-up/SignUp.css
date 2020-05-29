@@ -1,7 +1,12 @@
 .b-sign-up.container {
-  max-width: 500px;
   padding-top: var(--large-padding);
   padding-bottom: var(--large-padding);
+  border-radius: var(--border-radius);
+  background-color: #f7f7f7;
+  margin-top: 70px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
 }
 
 .b-sign-up__header {
@@ -12,37 +17,34 @@
 }
 
 .b-sign-up__sign-in {
-  color: var(--black-color);
+  color: var(--link-color);
 }
 
 .b-sign-up__sign-in:hover {
-  color: var(--black-color);
   opacity: 0.8;
 }
 
-.b-sign-up__form .b-sign-up__password,
-.b-sign-up__form .b-sign-up__email,
-.b-sign-up__form .b-sign-up__confirm-password {
+.b-sign-up__form .MuiFormControl-root {
   width: 100%;
-  margin-bottom: var(--average-margin);
+  margin-bottom: var(--huge-margin);
 }
 
 .b-button.b-sign-up__submit {
   width: 100%;
-  color: var(--white-color);
-  background-color: var(--black-color);
   border-radius: var(--border-radius);
+  background-color: #4f4f4f;
 }
 
 .b-sign-up__submit:hover {
   opacity: 0.8;
 }
 
-@media (min-width: 550px) {
-  .b-sign-up.container {
-    border-radius: var(--border-radius);
-    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
-    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
-    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
+@media (max-width: 380px) {
+  .b-sign-up__title {
+    font-size: 20px;
+  }
+
+  .b-sign-up__sign-in {
+    font-size: 12px;
   }
 }

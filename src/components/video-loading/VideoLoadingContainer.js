@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 
-import HomeScreen from './HomeScreen'
+import VideoLoading from './VideoLoading'
+import { requestVideoLoading } from '../../store/actions/Video'
 
 const mapStateToProps = (state) => {
   return {
@@ -10,10 +11,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = () => {
   return {
+    requestVideoLoading: (configuration) => dispatchEvent(requestVideoLoading(configuration))
   }
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(HomeScreen)
+)(VideoLoading)

@@ -1,47 +1,46 @@
 .b-sign-in.container {
-  max-width: 500px;
   padding-top: var(--large-padding);
   padding-bottom: var(--large-padding);
+  border-radius: var(--border-radius);
+  background-color: #f7f7f7;
+  margin-top: 200px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
 }
 
 .b-sign-in__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--large-margin);
+  margin-bottom: var(--average-margin);
 }
 
-.b-sign-in__sign-up {
-  color: var(--black-color);
+.b-sign-in__form .b-sign-in__forgot-password {
+  display: block;
+}
+
+.b-sign-in__sign-up,
+.b-sign-in__forgot-password {
+  color: var(--link-color);
 }
 
 .b-sign-in__sign-up:hover {
-  color: var(--black-color);
   opacity: 0.8;
 }
 
-.b-sign-in__form .b-sign-in__password,
-.b-sign-in__form .b-sign-in__email {
+.b-sign-in__form .MuiFormControl-root,
+.b-sign-in__form .b-sign-in__forgot-password {
   width: 100%;
-  margin-bottom: var(--average-margin);
+  margin-bottom: var(--large-margin);
 }
 
 .b-button.b-sign-in__submit {
   width: 100%;
-  color: var(--white-color);
-  background-color: var(--black-color);
   border-radius: var(--border-radius);
+  background-color: #4f4f4f;
 }
 
 .b-sign-in__submit:hover {
   opacity: 0.8;
-}
-
-@media (min-width: 550px) {
-  .b-sign-in.container {
-    border-radius: var(--border-radius);
-    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
-    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
-    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.62);
-  }
 }
