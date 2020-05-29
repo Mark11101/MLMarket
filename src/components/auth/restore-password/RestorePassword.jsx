@@ -58,7 +58,7 @@ const RestorePassword = (props) => {
   }
 
   return (
-    <Container className='b-restore-password col-6'>
+    <Container className='b-restore-password'>
       <h4 className='b-restore-password__title'>
         Восстановление пароля
       </h4>

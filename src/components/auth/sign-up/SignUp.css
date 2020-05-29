@@ -1,12 +1,6 @@
 .b-sign-up.container {
   padding-top: var(--large-padding);
   padding-bottom: var(--large-padding);
-  border-radius: var(--border-radius);
-  background-color: #f7f7f7;
-  margin-top: 70px;
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
-  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
 }
 
 .b-sign-up__header {
@@ -32,7 +26,6 @@
 .b-button.b-sign-up__submit {
   width: 100%;
   border-radius: var(--border-radius);
-  background-color: #4f4f4f;
 }
 
 .b-sign-up__submit:hover {
@@ -46,5 +39,16 @@
 
   .b-sign-up__sign-in {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .b-sign-up.container {
+    border-radius: var(--border-radius);
+    background-color: var(--white-color);
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
   }
 }

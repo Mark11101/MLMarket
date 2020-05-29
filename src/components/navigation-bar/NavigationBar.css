@@ -3,26 +3,6 @@
   background-color: var(--blue-color);
 }
 
-.auth-page .b-nav {
-  background: #ffffff00;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
-}
-
-.b-nav.navbar .navbar-nav .nav-link,
-.b-nav.navbar .b-nav__brand {
-  color: var(--white-color)!important;
-  font-weight: bold;
-}
-
-.auth-page .b-nav.navbar .navbar-nav .nav-link,
-.auth-page .b-nav.navbar .b-nav__brand {
-  color: var(--black-color)!important;
-  font-weight: bold;
-}
-
-.b-nav.navbar .navbar-nav .nav-link:hover {
-  opacity: 0.8;
+.b-nav.navbar .navbar-nav .nav-link {
   color: var(--white-color);
 }

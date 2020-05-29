@@ -179,7 +179,7 @@ const SignUp = (props) => {
   }
 
   return (
-    <Container className='b-sign-up col-6'>
+    <Container className='b-sign-up'>
       <div className='b-sign-up__header'>
         <h4 className='b-sign-up__title'>
           Регистрация

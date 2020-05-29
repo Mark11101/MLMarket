@@ -19,6 +19,7 @@ const NavigationBar = (props) => {
   return (
     <Navbar 
       expand='lg'
+      variant='dark'
       className='b-nav'
     >
       <Container>

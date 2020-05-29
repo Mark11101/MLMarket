@@ -87,7 +87,7 @@ const SignIn = (props) => {
   }
 
   return (
-    <Container className='b-sign-in col-4'>
+    <Container className='b-sign-in'>
       <div className='b-sign-in__header'>
         <h4 className='b-sign-in__title'>
           Вход

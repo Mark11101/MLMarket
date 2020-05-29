@@ -1,12 +1,6 @@
 .b-video-loading.container {
   padding-top: var(--large-padding);
   padding-bottom: var(--large-padding);
-  border-radius: var(--border-radius);
-  background-color: var(--white-color);
-  margin-top: 70px;
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
-  -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
 }
 
 .b-video-loading__header,
@@ -43,5 +37,16 @@
 
   .b-video-loading__configuration .MuiFormControl-root {
     margin-bottom: var(--common-margin);
+  }
+}
+
+@media (min-width: 768px) {
+  .b-video-loading.container {
+    border-radius: var(--border-radius);
+    background-color: var(--white-color);
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.89);
   }
 }

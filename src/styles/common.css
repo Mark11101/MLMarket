@@ -2,16 +2,7 @@ h1, h2, h3, h4 {
   font-weight: bold!important;
 }
 
-body.auth-page {
-  height: 100vh;
-  background-image: url(../images/Wallpaper.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #f2f2f2c2;
-}
-
+body.auth-page,
 body.video-page {
   height: 100vh;
   background-color: var(--light-blue-color);
@@ -47,4 +38,12 @@ body.video-page {
 
 .MuiFormLabel-asterisk {
   display: none;
+}
+
+@media (max-width: 768px) {
+  body.auth-page,
+  body.video-page {
+    height: 100vh;
+    background-color: var(--white-color);
+  }
 }
